@@ -1,0 +1,3 @@
+Since the Docker has been Running in Virtual Box we need to run the docker in the following port 
+
+link for local host machine = 192.168.99.100
