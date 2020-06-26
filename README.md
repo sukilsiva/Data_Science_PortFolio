@@ -49,5 +49,31 @@ Techniques.
 		- [Computer Vision](https://github.com/sukilsiva/Machine-Learnig-Deep-Learning-Code/tree/master/Computer_vision): Ability of a Computer Model to Find the Number plate From a Vechicle and Storing it in a Database.
 		- [Image Classifier APP](https://github.com/sukilsiva/Machine-Learnig-Deep-Learning-Code/tree/master/Image_Classification_Model_Deployment): Getting an Image Via Webcam and Train the Model using Transfer Learning Technique of Resnet50 to recognize the image and Deploy the Model with Help of Flask and Front End Design Flassger
 		- [Stocks Prediction Using Headlines app](https://github.com/sukilsiva/Machine-Learnig-Deep-Learning-Code/tree/master/Natural-Language-Processing-Deployment): Building an App that tells whether to invest on stocks by Reading the Headlines and deploy the model using Flask and Front Designs are Written in Basic HTML and CSS Code.
+		
+## Technologies Used
+
+![](https://forthebadge.com/images/badges/made-with-python.svg)
+
+[<img target="_blank" src="https://keras.io/img/logo.png" width=200>](https://keras.io/) [<img target="_blank" src="https://flask.palletsprojects.com/en/1.1.x/_images/flask-logo.png" width=170>](https://flask.palletsprojects.com/en/1.1.x/) [<img target="_blank" src="https://number1.co.za/wp-content/uploads/2017/10/gunicorn_logo-300x85.png" width=280>](https://gunicorn.org) [<img target="_blank" src="https://www.kindpng.com/picc/b/301/3012484.png" width=200>](https://aws.amazon.com/s3/) 
+
+[<img target="_blank" src="https://sentry-brand.storage.googleapis.com/sentry-logo-black.png" width=270>](https://www.sentry.io/) [<img target="_blank" src="https://openjsf.org/wp-content/uploads/sites/84/2019/10/jquery-logo-vertical_large_square.png" width=100>](https://jquery.com/)
+
+## credits
+
+* [Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython](http://www.amazon.com/Python-Data-Analysis-Wrangling-IPython/dp/1449319793) by Wes McKinney
+* [PyCon 2015 Scikit-learn Tutorial](https://github.com/jakevdp/sklearn_pycon2015) by Jake VanderPlas
+* [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook) by Jake VanderPlas
+* [Parallel Machine Learning with scikit-learn and IPython](https://github.com/ogrisel/parallel_ml_tutorial) by Olivier Grisel
+* [Statistical Interference Using Computational Methods in Python](hhttps://www.youtube.com/channel/UCb1GdqUqArXMQ3RS86lqqOw) by Sudhansu
+* [TensorFlow Examples](https://github.com/aymericdamien/TensorFlow-Examples) by Aymeric Damien
+* [TensorFlow Tutorials](https://github.com/pkmital/tensorflow_tutorials) by Parag K Mital
+* [TensorFlow Tutorials](https://github.com/nlintz/TensorFlow-Tutorials) by Nathan Lintz
+* [TensorFlow Tutorials](https://github.com/alrojo/tensorflow-tutorial) by Alexander R Johansen
+* [TensorFlow Book](https://github.com/BinRoot/TensorFlow-Book) by Nishant Shukla
+* [Keras tutorials](https://github.com/leriomaggio/deep-learning-keras-tensorflow) by Valerio Maggio
+* [Kaggle](https://www.kaggle.com/)
+* [Krish Naik](https://www.youtube.com/user/krishnaik06) by Krish Naik
+* [Sentdex](https://www.youtube.com/user/sentdex) by sentdex
+
 
 If you liked what you saw, want to have a chat with me about the portfolio, work opportunities, or collaboration, shoot an email at sukilsiva71@gmail, sukilsiva71@outlook.com. 
