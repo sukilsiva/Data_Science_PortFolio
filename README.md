@@ -94,8 +94,8 @@ Techniques.
 * [Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython](http://www.amazon.com/Python-Data-Analysis-Wrangling-IPython/dp/1449319793) by Wes McKinney
 * [Statistical Interference Using Computational Methods in Python](https://www.youtube.com/channel/UCb1GdqUqArXMQ3RS86lqqOw) by Sudhansu
 * [Kaggle](https://www.kaggle.com/)
-* [Krish Naik](https://www.youtube.com/user/krishnaik06) by Krish Naik
-* [Sentdex](https://www.youtube.com/user/sentdex) by sentdex
-
+* [Machine Learning and Deep Learning](https://www.youtube.com/user/krishnaik06) by Krish Naik
+* [Machine Learning and Deep Learning](https://www.youtube.com/user/sentdex) by sentdex
+* [Helped Developing GAN Model](https://www.linkedin.com/in/shubham-kr-singh)from Shubham Kumar Singh
 
 If you liked what you saw, want to have a chat with me about the portfolio, work opportunities, or collaboration, shoot an email at sukilsiva71@gmail, sukilsiva71@outlook.com. 
