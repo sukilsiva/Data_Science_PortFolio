@@ -10,7 +10,7 @@ Repository containing Machine Learning and Deep Learning projects completed by m
 	- [Unsupervised Learning: Creating Customer Segments](https://github.com/sukilsiva/Machine-Learnig-Deep-Learning-Code/blob/master/Clustering.ipynb): Analyzing a dataset containing data on various customers of Google Mobility Dataset (reported in monetary units) of diverse product categories for discovering internal structure, patterns and knowledge.
 	- [Supervised Learning: TV_Show](https://github.com/sukilsiva/Machine-Learnig-Deep-Learning-Code/blob/master/Supervised%20Learning.ipynb): Creating an optimized Machine-Learning Model to identify whether People are intrested in Marriage at First sight or Not from TV Show dataset.
 	- [Deep Learning: Malaria Classification using CNNs](https://github.com/sukilsiva/Machine-Learnig-Deep-Learning-Code/blob/master/Malaria.ipynb):  Designing and implementing a Convolutional Neural Network that learns to recognize whether a person is having Malaria or Not from a X-Ray Generated Images.
-  - [Deep Learning: Audio Classifier using CNNs](https://github.com/sukilsiva/Machine-Learnig-Deep-Learning-Code/blob/master/Audio_Classifier.ipynb): Building an Audio Classifier that Can Classify More than 30 types of sounds that around us in daily scenario By Building convolutional Neural Network.
+        - [Deep Learning: Audio Classifier using CNNs](https://github.com/sukilsiva/Machine-Learnig-Deep-Learning-Code/blob/master/Audio_Classifier.ipynb): Building an Audio Classifier that Can Classify More than 30 types of sounds that around us in daily scenario By Building convolutional Neural Network.
 	- [Transfer Learning: Finding The Real-Fake Images](https://github.com/sukilsiva/Machine-Learnig-Deep-Learning-Code/blob/master/REALFAKEFACEDETECTION_INCEPTION_V3.ipynb): Creating a Transfer Learning Model Inception_V3 to Classify the Face SHown on the image is real or Fake .
 
 	_Tools: scikit-learn, Pandas, Seaborn, Matplotlib, Tensorflow, Keras 
@@ -38,7 +38,7 @@ Repository containing Machine Learning and Deep Learning projects completed by m
 		- [Complete Machine Learning Life Cycle](https://github.com/sukilsiva/Machine-Learnig-Deep-Learning-Code/blob/master/MachineLearningLifeCycle.ipynb): Building a Complete Machine Learning Model that Covers all the Life cycle of a project from begining to end covers Data Analysis, Feature Engineering, Feature Selection, Model Development
 		- [Movie and Book Recommendations using Recommender Systems](https://github.com/sukilsiva/Machine-Learnig-Deep-Learning-Code/blob/master/Recommendation_systems.ipynb): A micro project to build a recommendation system that makes movie recommendations based on user review similarities by Corelation Methods and Book Recommendation by advanced KNN
 Techniques.
-   	- [Transfer Learning : VGG19](https://github.com/sukilsiva/Machine-Learnig-Deep-Learning-Code/blob/master/VGG19.ipynb): Building a Transfer Learning VGG19 Model that Classify whether the person is having Malaria or Not from the X-Ray Images
+          	- [Transfer Learning : VGG19](https://github.com/sukilsiva/Machine-Learnig-Deep-Learning-Code/blob/master/VGG19.ipynb): Building a Transfer Learning VGG19 Model that Classify whether the person is having Malaria or Not from the X-Ray Images
 		- [ROC-AUC Curve](https://github.com/sukilsiva/Machine-Learnig-Deep-Learning-Code/blob/master/roc_curve.ipynb): Developing ROC-AUC Curve that helps to use the optimize threshold value for the machine Learning Model.
 	
 
