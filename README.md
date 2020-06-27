@@ -1,4 +1,6 @@
 # Machine-Learning-Deep-Learning-Code
+![Kaggle](https://img.shields.io/badge/Dataset-Kaggle-blue.svg) ![Python 3.6](https://img.shields.io/badge/Python-3.6-brightgreen.svg) ![NLTK](https://img.shields.io/badge/Library-NLTK-orange.svg)
+
 Repository containing Machine Learning and Deep Learning projects completed by me for academic, self learning, and hobby purposes. Presented in the form of iPython Notebooks, and HTML, CSS markdown files.
 
 ## Contents
