@@ -96,9 +96,9 @@ Repository containing Machine Learning and Deep Learning projects completed by m
 * [Book BY Wes Mckinney](http://www.amazon.com/Python-Data-Analysis-Wrangling-IPython/dp/1449319793) 
 * [Sudhansu Kumar ](https://www.youtube.com/channel/UCb1GdqUqArXMQ3RS86lqqOw) 
 * [Kaggle](https://www.kaggle.com/)
-* [Machine Learning and Deep Learning](https://www.youtube.com/user/krishnaik06) by Krish Naik
-* [Machine Learning and Deep Learning](https://www.youtube.com/user/sentdex) by Sentdex
-* [Machine Learning and Deep Learning](https://www.youtube.com/channel/UCq6XkhO5SZ66N04IcPbqNcw) by Keith Galli
-* [Shubham Kumar Singh](https://www.linkedin.com/in/shubham-kr-singh) 
+* [Krish Naik](https://www.youtube.com/user/krishnaik06) 
+* [Sentdex](https://www.youtube.com/user/sentdex) 
+* [Keith Galli](https://www.youtube.com/channel/UCq6XkhO5SZ66N04IcPbqNcw) 
+* [Shubham Kumar Singh](https://www.youtube.com/channel/UCfTviIEqZUeg5A4JCybDgAQ) 
 
 If you liked what you saw, want to have a chat with me about the portfolio, work opportunities, or collaboration, shoot an email at sukilsiva71@gmail.com, sukilsiva71@outlook.com. 
