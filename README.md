@@ -27,8 +27,8 @@ Repository containing Machine Learning and Deep Learning projects completed by m
 
 - ### Data Analysis and Visualisation
 	- __Python__
-		- [IOT_Data_Vizualisations](https://github.com/sukilsiva/Machine-Learnig-Deep-Learning-Code/blob/master/Data%20Visualisations/Notebooks/IOT_Data_Vizualisation.py): Analysis of IOT Data Genrated by Temperature Measuring Devices in and Outside the Room Usin EDA.
-		- [World Unemployment Rate - Exploratory Analysis](https://github.com/sukilsiva/Machine-Learnig-Deep-Learning-Code/blob/master/Data%20Visualisations/Notebooks/World_Unemployment_Data_Vizualisation.ipynb): Exploratory Analysis of the data from the world unempoyment of youths and How it increases Every Year using pandas,matplotlib, seaborn and plotly.
+		- [IOT_Data_Vizualisations](https://github.com/sukilsiva/Machine-Learnig-Deep-Learning-Code/blob/master/Data%20Visualisations/Notebooks/IOT_Data_Vizualisation.py): Analysis of IOT Data Genrated by Temperature Measuring Devices in and Outside the Room Usin EDA and You can also view the report inside Report Folder.
+		- [World Unemployment Rate - Exploratory Analysis](https://github.com/sukilsiva/Machine-Learnig-Deep-Learning-Code/blob/master/Data%20Visualisations/Notebooks/World_Unemployment_Data_Vizualisation.ipynb): Exploratory Analysis of the data from the world unempoyment of youths and How it increases Every Year using pandas,matplotlib, seaborn and plotly and You can also view the report inside Report Folder.
 		
 	_Tools: Pandas, plotly, Seaborn and Matplotlib_
 
@@ -93,11 +93,12 @@ Repository containing Machine Learning and Deep Learning projects completed by m
 
 ## credits
 
-* [Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython](http://www.amazon.com/Python-Data-Analysis-Wrangling-IPython/dp/1449319793) by Wes McKinney
-* [Statistical Interference Using Computational Methods in Python](https://www.youtube.com/channel/UCb1GdqUqArXMQ3RS86lqqOw) by Sudhansu
+* [Book BY Wes Mckinney](http://www.amazon.com/Python-Data-Analysis-Wrangling-IPython/dp/1449319793) 
+* [Sudhansu Kumar ](https://www.youtube.com/channel/UCb1GdqUqArXMQ3RS86lqqOw) 
 * [Kaggle](https://www.kaggle.com/)
 * [Machine Learning and Deep Learning](https://www.youtube.com/user/krishnaik06) by Krish Naik
-* [Machine Learning and Deep Learning](https://www.youtube.com/user/sentdex) by sentdex
-* [Helped Developing GAN Model](https://www.linkedin.com/in/shubham-kr-singh) from Shubham Kumar Singh
+* [Machine Learning and Deep Learning](https://www.youtube.com/user/sentdex) by Sentdex
+* [Machine Learning and Deep Learning](https://www.youtube.com/channel/UCq6XkhO5SZ66N04IcPbqNcw) by Keith Galli
+* [Shubham Kumar Singh](https://www.linkedin.com/in/shubham-kr-singh) 
 
 If you liked what you saw, want to have a chat with me about the portfolio, work opportunities, or collaboration, shoot an email at sukilsiva71@gmail.com, sukilsiva71@outlook.com. 
