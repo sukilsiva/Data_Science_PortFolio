@@ -4,3 +4,5 @@
 
 The Output the Code with image is :
 
+![Plate](C:\Python\Datasets\Computer_vision\Vechicle_Number_Plate_Detection\plate.PNG)
+
