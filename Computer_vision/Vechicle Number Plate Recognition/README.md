@@ -4,5 +4,5 @@
 
 The Output the Code with image is :
 
-![Plate]()
+![](https://github.com/sukilsiva/Machine-Learnig-Deep-Learning-Code/blob/master/Computer_vision/Vechicle%20Number%20Plate%20Recognition/plate.png)
 
