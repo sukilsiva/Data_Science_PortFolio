@@ -1,4 +1,4 @@
-# Machine-Learning-Deep-Learning-Codes
+# Data_Scientist_PortFolio
 ![Kaggle](https://img.shields.io/badge/Dataset-Kaggle-blue.svg) ![Python 3.7](https://img.shields.io/badge/Python-3.7-brightgreen.svg) ![NLTK](https://img.shields.io/badge/Library-NLTK-orange.svg) ![scikit-learnn](https://img.shields.io/badge/Library-Scikit_Learn-orange.svg) ![Tensorflow](https://img.shields.io/badge/Library-Tensorflow-orange.svg) ![Pytorch](https://img.shields.io/badge/Library-Pytorch-orange.svg) 
 
 Repository containing Machine Learning and Deep Learning projects completed by me for academic, self learning, and hobby purposes. Presented in the form of iPython Notebooks, and HTML, CSS markdown files.
