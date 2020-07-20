@@ -14,8 +14,9 @@ Repository containing Machine Learning and Deep Learning projects completed by m
 	- [Deep Learning: Malaria Classification using CNNs](https://github.com/sukilsiva/Machine-Learnig-Deep-Learning-Code/blob/master/Malaria.ipynb):  Designing and implementing a Convolutional Neural Network that learns to recognize whether a person is having Malaria or Not from a X-Ray Generated Images.
    - [Deep Learning: Audio Classifier using CNNs](https://github.com/sukilsiva/Machine-Learnig-Deep-Learning-Code/blob/master/Audio_Classifier.ipynb): Building an Audio Classifier that Can Classify More than 30 types of sounds that around us in daily scenario By Building convolutional Neural Network.
 	- [Transfer Learning: Finding The Real-Fake Images](https://github.com/sukilsiva/Machine-Learnig-Deep-Learning-Code/blob/master/REALFAKEFACEDETECTION_INCEPTION_V3.ipynb): Creating a Transfer Learning Model Inception_V3 to Classify the Face SHown on the image is real or Fake .
-
-	_Tools: scikit-learn, Pandas, Seaborn, Matplotlib, Tensorflow, Keras 
+	- [Deep Learning using Pytorch: Diabetes Classification](https://github.com/sukilsiva/Machine-Learnig-Deep-Learning-Code/blob/master/ANN_Model_Using_Pytorch_Diabetes_Prediction.ipynb): Developing a Model (i.e) Neural Networks Artificial Neural Network (ANN) using Pytorch to classify whether the person is having Diabetes or Not From the Given Data.
+	
+	_Tools: scikit-learn, Pandas, Seaborn, Matplotlib, Tensorflow, Pytorch, Keras 
 
 - ### Natural Language Processing
 
@@ -89,6 +90,7 @@ Repository containing Machine Learning and Deep Learning projects completed by m
 <p align="center">
   <img src="http://i.imgur.com/ZhKXrKZ.png">
 </p>
+
 ![PyTorch Logo](https://github.com/pytorch/pytorch/blob/master/docs/source/_static/img/pytorch-logo-dark.png)
 
 
