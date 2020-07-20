@@ -1,5 +1,5 @@
 # Machine-Learning-Deep-Learning-Codes
-![Kaggle](https://img.shields.io/badge/Dataset-Kaggle-blue.svg) ![Python 3.7](https://img.shields.io/badge/Python-3.7-brightgreen.svg) ![NLTK](https://img.shields.io/badge/Library-NLTK-orange.svg) ![scikit-learnn](https://img.shields.io/badge/Library-Scikit_Learn-orange.svg) ![Tensorflow](https://img.shields.io/badge/Library-Tensorflow-orange.svg)
+![Kaggle](https://img.shields.io/badge/Dataset-Kaggle-blue.svg) ![Python 3.7](https://img.shields.io/badge/Python-3.7-brightgreen.svg) ![NLTK](https://img.shields.io/badge/Library-NLTK-orange.svg) ![scikit-learnn](https://img.shields.io/badge/Library-Scikit_Learn-orange.svg) ![Tensorflow](https://img.shields.io/badge/Library-Tensorflow-orange.svg) ![Pytorch](https://img.shields.io/badge/Library-Pytorch-orange.svg) 
 
 Repository containing Machine Learning and Deep Learning projects completed by me for academic, self learning, and hobby purposes. Presented in the form of iPython Notebooks, and HTML, CSS markdown files.
 
@@ -56,7 +56,7 @@ Repository containing Machine Learning and Deep Learning projects completed by m
 
 ![](https://forthebadge.com/images/badges/made-with-python.svg)
 
-[<img target="_blank" src="https://keras.io/img/logo.png" width=200>](https://keras.io/) [<img target="_blank" src="https://flask.palletsprojects.com/en/1.1.x/_images/flask-logo.png" width=170>](https://flask.palletsprojects.com/en/1.1.x/)
+[<img target="_blank" src="https://keras.io/img/logo.png" width=200>](https://keras.io/)      [<img target="_blank" src="https://flask.palletsprojects.com/en/1.1.x/_images/flask-logo.png" width=170>](https://flask.palletsprojects.com/en/1.1.x/)
 <br/>
 <p align="center">
   <img src="https://raw.githubusercontent.com/donnemartin/data-science-ipython-notebooks/master/images/python.png">
@@ -89,6 +89,7 @@ Repository containing Machine Learning and Deep Learning projects completed by m
 <p align="center">
   <img src="http://i.imgur.com/ZhKXrKZ.png">
 </p>
+![PyTorch Logo](https://github.com/pytorch/pytorch/blob/master/docs/source/_static/img/pytorch-logo-dark.png)
 
 
 ## credits
