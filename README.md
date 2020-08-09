@@ -53,6 +53,8 @@ Repository containing Machine Learning and Deep Learning projects completed by m
 		- [Computer Vision](https://github.com/sukilsiva/Machine-Learnig-Deep-Learning-Code/tree/master/Computer_vision): Ability of a Computer Model to Find the Number plate From a Vechicle and Storing it in a Database.
 		- [Image Classifier APP](https://github.com/sukilsiva/Machine-Learnig-Deep-Learning-Code/tree/master/Image_Classification_Model_Deployment): Getting an Image Via Webcam and Train the Model using Transfer Learning Technique of Resnet50 to recognize the image and Deploy the Model with Help of Flask and Front End Design Flassger
 		- [Stocks Prediction Using Headlines app](https://github.com/sukilsiva/Machine-Learnig-Deep-Learning-Code/tree/master/Natural-Language-Processing-Deployment): Building an App that tells whether to invest on stocks by Reading the Headlines and deploy the model using Flask and Front Designs are Written in Basic HTML and CSS Code.
+		- [Gold price Predictor app](https://github.com/sukilsiva/Data_Science_PortFolio/tree/master/Gold_Price_Predictor_Heroku_Web_App): Building an App that has an ability to predict the gold price tommorow and deploy the model using Flask and Front Designs are Written in Basic HTML and CSS Code in Heroku Cloud Platform.
+		
 		
 ## Technologies Used
 
