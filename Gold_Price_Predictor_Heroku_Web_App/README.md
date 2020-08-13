@@ -13,8 +13,12 @@ Link: _https://github.com/sukilsiva/Gold-Price-Predictor_
 • Please do ⭐ the repository, if it helped you in anyway.
 
 • A glimpse of the web app:
+
 Initial Release:
 ![GIF](https://github.com/sukilsiva/Data_Science_PortFolio/blob/master/Gold_Price_Predictor_Heroku_Web_App/readme_resources/output.gif)
+
+
+
 
 Updated Release:
 ![GIF](https://github.com/sukilsiva/Data_Science_PortFolio/blob/master/Gold_Price_Predictor_Heroku_Web_App/readme_resources/output_gif.gif)
