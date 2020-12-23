@@ -1,0 +1,35 @@
+html{
+	height: 100%;
+	margin: 0;
+}
+
+
+/* Footer */
+.footer{
+    position: fixed; 
+    padding: 10px 10px 10px 10px; 
+    bottom: 0; 
+    width: 100%; 
+    /* Height of the footer*/  
+    height: 40px; 
+    background: grey;
+    text-align: center;
+}
+
+.contact{
+	color: black;
+	padding: 7px;
+}
+
+.contact:hover{
+	color: white;
+}
+
+.footer-description{
+	margin: 0;
+	font-size: 12px;
+	font-weight: 100;
+}
+
+
+
