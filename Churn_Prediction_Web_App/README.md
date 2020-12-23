@@ -8,6 +8,6 @@
 Deployed at: _https://predicting-goldprice-api.herokuapp.com/_
 
 • If you are searching for __Code__, __Algorithms used__ and __Accuracy__ of the model.. you won't find it here. Click the link mentioned below for the same:<br />
-Link: _https://github.com/sukilsiva/Gold-Price-Predictor_
+Link: _https://github.com/sukilsiva/Data_Science_PortFolio/edit/master/Churn_Prediction_Web_App_
 
 • Please do ⭐ the repository, if it helped you in anyway.
