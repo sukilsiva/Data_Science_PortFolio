@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Churn Prediction</title>
+  <link rel="stylesheet" href="static/css/styles.css">
+  <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body style="background: black" text="white">
+ 
+ 
+ <div class="wrapper">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <img class="nav-travel" src="../static/images/logo.png">
+                    </a>
+                </div>
+            </div>
+        </nav>
+        </div>
+ 
+ 
+ <div class="login">
+	<center><h1>Customer Churn Prediction</h1></center>
+    <center><h4>Developer: Sukil Siva</h4></center>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+
+    <center>
+      <input type="checkbox" id="SeniorCitizen" name="SeniorCitizen" value=1>
+      <label for="SeniorCitizen"> Senior Citizen</label> &nbsp;&nbsp;&nbsp;
+      <input type="checkbox" id="Partner" name="Partner" value=1>
+      <label for="Partner">Has a partner</label> &nbsp;&nbsp;&nbsp;
+      <input type="checkbox" id="Dependents" name="Dependents" value=1>
+      <label for="Dependents">Has dependents</label>&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" id="PaperlessBilling" name="PaperlessBilling" value=1>
+      <label for="PaperlessBilling">Paperless Billing</label>&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" id="PhoneService" name="PhoneService" value=1>
+      <label for="PhoneService">Phone Service</label>&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" id="MultipleLines" name="MultipleLines" value=1>
+      <label for="MultipleLines">Multiple Lines</label>
+    </center>
+    <br>
+
+    <center>
+      <input type="checkbox" id="OnlineSecurity" name="OnlineSecurity" value=1>
+      <label for="OnlineSecurity">Online Security</label>&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" id="OnlineBackup" name="OnlineBackup" value=1>
+      <label for="OnlineBackup">Online Backup</label>&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" id="DeviceProtection" name="DeviceProtection" value=1>
+      <label for="DeviceProtection">Device Protection</label>&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" id="TechSupport" name="TechSupport" value=1>
+      <label for="TechSupport">Tech Support</label>&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" id="StreamingTV" name="StreamingTV" value=1>
+      <label for="StreamingTV">Streaming TV</label>&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" id="StreamingMovies" name="StreamingMovies" value=1>
+      <label for="StreamingMovies">Streaming Movies</label>
+     </center>
+     <br>
+
+    <center>
+      <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value=0>Male</option>
+            <option value=1>Female</option>
+        </select> &nbsp;&nbsp;
+
+      <label for="InternetService">Internet :</label>
+      	<select id="InternetService" name="InternetService">
+        		<option value=0>No</option>
+        		<option value=1>DSL</option>
+              <option value=2>Fiber optic</option>
+        </select> &nbsp;&nbsp;
+
+      <label for="Contract">Contract:</label>
+      	<select id="Contract" name="Contract">
+        		<option value=0>Month-to-Month</option>
+        		<option value=1>One-Year</option>
+              <option value=2>Two-Year</option>
+	      </select>&nbsp;&nbsp;
+
+        <label for="PaymentMethod">Payment:</label>
+        	<select id="PaymentMethod" name="PaymentMethod">
+          		<option value=0>Automatic: Bank Transfer</option>
+          		<option value=1>Automatic: Credit Card</option>
+                <option value=2>Electronic Check</option>
+                <option value=3>Mailed Check</option>
+        	</select>
+      </center>
+<br>
+
+<center>
+		<input type="number"  min="0" name="MonthlyCharges" placeholder="Monthly Charges" required="required" />
+<input type="number"  min="0" name="Tenure" placeholder="Tenure in Months" required="required" />
+
+</center>
+<br><br>
+
+<center>
+<button type="submit" class="btn btn-primary btn-block btn-large" style="height:30px;width:200px">Predict</button>
+</center>
+    </form>
+
+ </div>
+ 
+ <!-- Footer -->
+ <center>
+       <div class='footer'>
+           <div class="contact">
+               <p class='footer-description'>Made with ❤️ by Sukil Siva.</p>
+           </div>
+           <a target="_blank" href="https://github.com/sukilsiva/Gold-Price-Predictor"><i class="fab fa-github fa-lg contact-icon"></i></a>
+           <a target="_blank" href=" https://www.linkedin.com/in/sukil-siva-399764168"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+
+       </div>
+</center>
+
+</body>
+</html>
