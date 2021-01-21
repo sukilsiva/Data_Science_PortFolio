@@ -28,7 +28,7 @@ app = Flask(__name__)
 
 ### COnfigurations are been set up for DB and Flask App
 app.config['MYSQL_DATABASE_USER'] = 'root'
-app.config['MYSQL_DATABASE_PASSWORD'] = 'Sathya@1972'
+app.config['MYSQL_DATABASE_PASSWORD'] = 'idntknowpassword#404'
 app.config['MYSQL_DATABASE_DB'] = 'churnapp'
 app.config['MYSQL_DATABASE_HOST'] = 'localhost'
 
