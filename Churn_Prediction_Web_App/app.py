@@ -10,9 +10,11 @@ from flask import Flask, request, render_template
 import numpy as np
 import pickle
 import base64
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-from matplotlib.patches import Circle, Wedge, Rectangle
-import io
+import io 
+from flaskext.mysql import MySQL
 
 ### Get the Pickle Model From Local Disk
 pickle_in = open("model.pkl","rb")
@@ -24,52 +26,109 @@ scaler = pickle.load(open("scaler.pkl", "rb"))
 ### Starting the App
 app = Flask(__name__)
 
+### COnfigurations are been set up for DB and Flask App
+app.config['MYSQL_DATABASE_USER'] = 'root'
+app.config['MYSQL_DATABASE_PASSWORD'] = 'Sathya@1972'
+app.config['MYSQL_DATABASE_DB'] = 'churnapp'
+app.config['MYSQL_DATABASE_HOST'] = 'localhost'
+
+### Initiating the Flask app
+mysql = MySQL()
+mysql.init_app(app)
 
 @app.route('/')
 def welcome():
     return render_template("index.html")
 
-@app.route('/predict',methods = ['POST'])
+@app.route('/predict',methods = ['GET','POST'])
 def predict():
     if request.method=="POST":
         ### Collecting Information using request Library
-        SeniorCitizen = 0
+
+        customerid = str(request.form["CustomerID"])
+
+        Gender = "Male"
+        if request.form["gender"] == 1:
+            Gender = "Female"
+
+        seniorcitizen = 0
         if 'SeniorCitizen' in request.form:
-            SeniorCitizen = 1
-        
-        Dependents = 0
+            seniorcitizen = 1
+
+        partner = "No"
+        if 'partner' in request.form:
+            partner = "Yes"    
+    
+    
+        dependents = 0
         if 'Dependents' in request.form:
             Dependents = 1
         
-        InternetService_No = 0
+        phoneservice = "No"
+        if 'PhoneService' in request.form:
+            phoneservice = "Yes"
+
+        multiplelines = "No"
+        if 'MultipleLines' in request.form:
+            multiplelines = "Yes"
+        
+        billing = "No"
+        if 'PaperlessBilling' in request.form:
+            billing = "Yes"
+        
+        onlinebackup = "No"
+        if 'OnlineBackup' in request.form:
+            onlinebackup = "Yes"
+        
+        deviceprotection = "No"
+        if 'DeviceProtection' in request.form:
+            deviceprotection = "Yes"
+        
+        streamingTV = "No"
+        if 'StreamingTV' in request.form:
+            streamingTV = "Yes"
+        
+        streamingMovies = "No"
+        if 'StreamingMovies' in request.form:
+            streamingMovies = "Yes"
+        
+        InternetService_No = "No"
         if request.form["InternetService"] == 1:
-            InternetService_No = 1
+            InternetService_No = "DSL"
         elif request.form["InternetService"] == 2:
-            InternetService_No = 2
-            
-        OnlineSecurity = 0
+            InternetService_No = "Fiber Optic"
+
+        paymentmethod = "Bank Transfer (Automatic)"
+        if request.form["PaymentMethod"] == 1:
+            paymentmethod = "Credit Card (Automatic)"
+        elif request.form["PaymentMethod"] == 2:
+            paymentmethod = "Electronic Check"
+        elif request.form["PaymentMethod"] == 3:
+            paymentmethod = "Mailed Check"
+        
+        
+        onlinesecurity = 0
         if 'OnlineSecurity' in request.form and InternetService_No == 2:
-            OnlineSecurity = 1
+            onlinesecurity = 1
         
-        TechSupport = 0
+        techsupport = 0
         if 'TechSupport' in request.form and InternetService_No == 2:
-            TechSupport = 1
+            techsupport = 1
             
-        Contract = 0
+        contract = 0
         if request.form["Contract"] == 1:
-            Contract = 1
+            contract = 1
         elif request.form["Contract"] == 2:
-            Contract = 2
+            contract = 2
         
-        MonthlyCharges = int(request.form["MonthlyCharges"])
+        monthlyCharges = int(request.form["MonthlyCharges"])
         Tenure = int(request.form["Tenure"])
+
+        totalCharges = str(monthlyCharges * Tenure)
         
         ### Fitting the Data for Scaling the Values
-        data=scaler.fit_transform(np.array([Contract, OnlineSecurity, TechSupport, Tenure, MonthlyCharges, SeniorCitizen, Dependents]).reshape(-1,1))
-        
-        ### printing the Data
-        ###print(data)
-        
+        data=scaler.fit_transform(np.array([contract, onlinesecurity, techsupport, Tenure, monthlyCharges, seniorcitizen, dependents]).reshape(-1,1))
+       
         ### Prediction
         prediction=classifier.predict(np.reshape(data, (1,7)))
         
@@ -79,106 +138,51 @@ def predict():
         my_prediction = prediction[0]
         my_prediction_proba = np.round(prediction_proba[0,1], 2)
         
-        
-        ### Gauge Plot
-        
-        def degree_range(n):
-            start = np.linspace(0,180,n+1, endpoint=True)[0:-1]
-            end = np.linspace(0,180,n+1, endpoint=True)[1::]
-            mid_points = start + ((end-start)/2.)
-            return np.c_[start, end], mid_points
-
-        def rot_text(ang):
-            rotation = np.degrees(np.radians(ang) * np.pi / np.pi - np.radians(90))
-            return rotation
-    
-        def gauge(labels=['LOW','MEDIUM','HIGH','EXTREME'], \
-                  colors=['#007A00','#0063BF','#FFCC00','#ED1C24'], Probability=1, fname=False):
-    
-            #N = len(labels)
-            colors = colors[::-1]
-    
-    
-            """
-            begins the plotting
-            """
-    
-            gauge_img = io.BytesIO()
-            fig, ax = plt.subplots()
-    
-            ang_range, mid_points = degree_range(4)
-    
-            labels = labels[::-1]
-    
-            """
-            plots the sectors and the arcs
-            """
-            patches = []
-            for ang, c in zip(ang_range, colors):
-                # sectors
-                patches.append(Wedge((0.,0.), .4, *ang, facecolor='w', lw=2))
-                # arcs
-                patches.append(Wedge((0.,0.), .4, *ang, width=0.10, facecolor=c, lw=2, alpha=0.5))
-    
-            [ax.add_patch(p) for p in patches]
-    
-    
-            """
-            set the labels (e.g. 'LOW','MEDIUM',...)
-            """
-    
-            for mid, lab in zip(mid_points, labels):
-    
-                ax.text(0.35 * np.cos(np.radians(mid)), 0.35 * np.sin(np.radians(mid)), lab, \
-                    horizontalalignment='center', verticalalignment='center', fontsize=14, \
-                    fontweight='bold', rotation = rot_text(mid))
-    
-            """
-            set the bottom banner and the title
-            """
-            r = Rectangle((-0.4,-0.1),0.8,0.1, facecolor='w', lw=2)
-            ax.add_patch(r)
-    
-            ax.text(0, -0.05, 'Churn Probability ' + Probability.astype(str), horizontalalignment='center', \
-                 verticalalignment='center', fontsize=22, fontweight='bold')
-    
-            """
-            plots the arrow now
-            """
-    
-            pos = (1-Probability)*180
-            ax.arrow(0, 0, 0.225 * np.cos(np.radians(pos)), 0.225 * np.sin(np.radians(pos)), \
-                         width=0.04, head_width=0.09, head_length=0.1, fc='k', ec='k')
-    
-            ax.add_patch(Circle((0, 0), radius=0.02, facecolor='k'))
-            ax.add_patch(Circle((0, 0), radius=0.01, facecolor='w', zorder=11))
-    
-            """
-            removes frame and ticks, and makes axis equal and tight
-            """
-    
-            ax.set_frame_on(False)
-            ax.axes.set_xticks([])
-            ax.axes.set_yticks([])
-            ax.axis('equal')
-            plt.tight_layout()
-    
-            plt.savefig(gauge_img, format = 'png')
-            gauge_img.seek(0)
-            url = base64.b64encode(gauge_img.getvalue()).decode()
-            return url
-        
-        gauge_url = gauge(Probability=my_prediction_proba)
-        
         if  my_prediction == 0:
-            prediction_test = "No"
+            churn = "No"
         else:
-            prediction_test = "yes"
-            
-        return render_template("results.html",prediction_text='Churn probability is {} and the Churn is {}'.format(my_prediction_proba, prediction_test), url1 = gauge_url)
+            churn = "yes"
+
+        if seniorcitizen == 0:
+            seniorcitizen = "No"
+        else:
+            seniorcitizen = "Yes"
+        
+        if dependents == 0:
+            dependents = "No"
+        else:
+            dependents = "Yes"
+        
+        if techsupport == 0:
+            techsupport = "No"
+        else:
+            techsupport = "Yes"
+        
+        if onlinesecurity == 0:
+            onlinesecurity= "No"
+        else:
+            onlinesecurity = "Yes"
+        
+        if contract == 0:
+            contract = "Month-to-Month"
+        elif contract == 1:
+            contract = "One-Year"
+        elif contract == 2:
+            contract = "Two-Year"
+        
+        
+        query = "INSERT INTO webappdata (CustomerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, MultipleLines, InternetService, OnlineSecurity, OnlineBackup, DeviceProtection, TechSupport, StreamingTV, StreamingMovies, Contract, PaperlessBilling, PaymentMethod, MonthlyCharges, TotalCharges, Churn) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+        values = (customerid, Gender, seniorcitizen, partner, dependents, Tenure, phoneservice, multiplelines, InternetService_No, onlinesecurity, onlinebackup, deviceprotection, techsupport, streamingTV, streamingMovies, contract, billing, paymentmethod, monthlyCharges, totalCharges, churn)
+        conn = mysql.connect()
+        cur = conn.cursor()
+        cur.execute(query, values)
+        conn.commit()
+        cur.close()
+    
+        return render_template("index.html",prediction_text='Churn probability is {} and the Churn is {}'.format(my_prediction_proba, churn))
 
 
 if __name__ == "__main__":
-    app.run(port = 5000)
+    app.run(port = 8080, debug =True)
 
 
