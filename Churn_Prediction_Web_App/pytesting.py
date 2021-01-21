@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np 
 import matplotlib.pyplot as plt 
 import seaborn as sns
+import sqlalchemy
 from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.ensemble import RandomForestClassifier
@@ -13,22 +14,27 @@ from imblearn.combine import SMOTETomek
 import json 
 
 class testing():
-    def __init__(self, data_address):
-        self.data_address = data_address
-
+    def __init__(self, original_data, webappdata):
+        self.availdata = original_data
+        self.webappdata = webappdata
     def get_data(self): 
-        # data from Github
+        # data from MySQL Database
         #https://dev.to/fpim/object-oriented-design-architecture-with-panda-me4     ### Reference for data cleaning and making perfect data
-        urladdress = self.data_address
-        url = urladdress
         
-        raw_data = pd.read_csv(url,index_col=0)
+        ### Have an Connection to Database
+        engine = sqlalchemy.create_engine('mysql+pymysql://root:idntknwpassword@localhost:3306/churnapp')
+        avail_df = pd.read_sql_table(self.availdata, engine)
+        app_df = pd.read_sql_table(self.webappdata, engine)
+        
+        raw_data = pd.concat([avail_df, app_df], axis=0)
 
-        return raw_data.to_csv("data_raw.csv")
+        return raw_data
     
     def preprocess_input(self):
+        
+        raw_data = self.get_data()
 
-        df = pd.read_csv("data_raw.csv")
+        df = pd.read_csv(raw_data)
 
         all_features = df.columns
         
@@ -79,9 +85,12 @@ class testing():
         ### Arranging the Columns with respet to dataset
         df=df[[feature for feature in data.columns]]
 
-        return df.to_csv("data_processed.csv")  
+        return df 
 
-    def testing(self, dataframe):
+    def data_testing(self):
+
+        dataframe = self.preprocess_input()
+
         # read the processed data
         df = pd.read_csv(dataframe)
 

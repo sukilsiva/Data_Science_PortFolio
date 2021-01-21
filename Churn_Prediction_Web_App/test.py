@@ -1,10 +1,10 @@
 from pytesting import testing
 
-Data = input("Enter the Data to Be Checked")
+data = input("Enter the DB Address of stored data")
+Data = input("Enter the DB Address Data from WEBAPP")
 
-test = testing("https://github.com/srivatsan88/YouTubeLI/blob/master/dataset/Wclks")
-test.get_data()
-test.preprocess_input()
-test.testing(Data)
+test = testing(original_data=data,webappdata=Data)
+
+print(test.data_testing())
 
 
