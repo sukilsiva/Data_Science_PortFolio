@@ -32,9 +32,9 @@ class testing():
     
     def preprocess_input(self):
         
-        raw_data = self.get_data()
+        df = self.get_data()
 
-        df = pd.read_csv(raw_data)
+        #df = pd.read_csv(raw_data)
 
         all_features = df.columns
         
