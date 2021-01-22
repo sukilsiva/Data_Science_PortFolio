@@ -179,7 +179,7 @@ def predict():
         conn.commit()
         cur.close()
     
-        return render_template("index.html",prediction_text='Churn probability is {} and the Churn is {}'.format(my_prediction_proba, churn))
+    return render_template("index.html",prediction_text='Churn probability is {} and the Churn is {}'.format(my_prediction_proba, churn))
 
 
 if __name__ == "__main__":
