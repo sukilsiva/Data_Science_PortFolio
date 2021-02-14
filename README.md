@@ -1,6 +1,18 @@
 # Data_Scientist_PortFolio
 ![Kaggle](https://img.shields.io/badge/Dataset-Kaggle-blue.svg) ![Python 3.7](https://img.shields.io/badge/Python-3.7-brightgreen.svg) ![NLTK](https://img.shields.io/badge/Library-NLTK-orange.svg) ![scikit-learnn](https://img.shields.io/badge/Library-Scikit_Learn-orange.svg) ![Tensorflow](https://img.shields.io/badge/Library-Tensorflow-orange.svg) ![Pytorch](https://img.shields.io/badge/Library-Pytorch-orange.svg) 
 
+- 👋 Hi, I’m @sukilsiva
+- 👀 I’m interested in Machine Learning and Artificial Intelligence
+- 🌱 I’m currently learning Data structures, Algorithms and practice solving data science Problem Statements
+- 💞️ I’m looking for an Job as Software Engineer, Machine Learning Engineer and Data scientist
+- 📫 How to reach me sukilsiva71@gmail.com, sukilsiva71@outlook.com
+
+<!---
+sukilsiva/sukilsiva is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+You can click the Preview link to take a look at your changes.
+--->
+
+
 Repository containing Machine Learning and Deep Learning projects completed by me for academic, self learning, and hobby purposes. Presented in the form of iPython Notebooks, and HTML, CSS markdown files.
 
 ## Contents
