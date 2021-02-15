@@ -22,7 +22,7 @@ class testing():
         #https://dev.to/fpim/object-oriented-design-architecture-with-panda-me4     ### Reference for data cleaning and making perfect data
         
         ### Have an Connection to Database
-        engine = sqlalchemy.create_engine('mysql+pymysql://root:idntknwpassword#404@localhost:3306/churnapp')
+        engine = sqlalchemy.create_engine('mysql+pymysql://root:Sathya@1972@localhost:3306/churnapp')
         avail_df = pd.read_sql_table(self.availdata, engine)
         app_df = pd.read_sql_table(self.webappdata, engine)
         
@@ -32,9 +32,9 @@ class testing():
     
     def preprocess_input(self):
         
-        df = self.get_data()
+        raw_data = self.get_data()
 
-        #df = pd.read_csv(raw_data)
+        df = pd.read_csv(raw_data)
 
         all_features = df.columns
         
