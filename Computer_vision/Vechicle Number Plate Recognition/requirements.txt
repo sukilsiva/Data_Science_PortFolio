@@ -1,6 +1,6 @@
 opencv==4.2.0
 pytesseract==0.3.4 
-numpy==1.18.1
+numpy==1.22.0
 random
 matplotlib
 os
